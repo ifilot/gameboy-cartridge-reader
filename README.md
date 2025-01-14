@@ -11,7 +11,7 @@ enabling data reading, writing, and backup. The design includes a custom PCB,
 firmware for the 32u4, and a simple GUI for user interaction.
 
 > [!NOTE]
-> Download a Windows 64-bit installer for the GUI [via this link](#)
+> Download a Windows 64-bit installer for the GUI [via this link](https://github.com/ifilot/gameboy-cartridge-reader/releases/latest/download/gbcr-installer-win64.exe)
 
 ## Features
 
@@ -23,8 +23,8 @@ firmware for the 32u4, and a simple GUI for user interaction.
   your computer.
 * **Open Source**: All design files, firmware, and GUI are open-source and available
   for modification.
-* **Writable Cartridge Support**: Includes a PCB design with an SST39SF010 chip, 
-  enabling the writing of 32KiB Gameboy games.
+* **Writable Cartridge Support**: Includes a [PCB design](pcb/gb-cart-sst39sf010/) 
+  with an SST39SF010 chip, enabling the writing of 32KiB Gameboy games.
 
 > [!IMPORTANT] 
 > Please be aware of copyright laws regarding Gameboy and Gameboy
@@ -45,6 +45,14 @@ for flashing custom or homebrew games. Designed for simplicity, the GUI ensures
 that all operations are intuitive and accessible, even for beginners.
 
 ![Graphical User Interface](img/screenshot_gui.png)
+
+## Bundled games
+
+The following games are bundled with the GUI and can be readily flashed by the
+user to a writeable cartridge.
+
+* [Quartet](https://makrill.itch.io/quartet)
+* [Flappybird](https://github.com/pashutk/flappybird-gameboy)
 
 ## PCB
 
