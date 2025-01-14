@@ -65,7 +65,7 @@ use a hot plate to solder the SMD components efficiently and accurately.
 
 <img src="img/gameboy-cartridge-reader.png" style="width: 50%;" alt="PCB with components">
 
-![PCB](img/pcb.png)
+<img src="img/pcb.png" style="width: 50%;" alt="PCB">
 
 ### Schematic
 
