@@ -1,0 +1,3 @@
+config/config.xml
+packages/com.vendor.product/meta/installscript.qs
+packages/com.vendor.product/meta/package.xml

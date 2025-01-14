@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "gameboy")(type "Legacy")(uri "${KIPRJMOD}/components/gameboy.lib")(options "")(descr ""))
+)

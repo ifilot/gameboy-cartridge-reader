@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "gameboy_cartridge_holders")(type "KiCad")(uri "${KIPRJMOD}/components/gameboy_cartridge_holders.pretty")(options "")(descr ""))
+  (lib (name "reichelt_usb")(type "KiCad")(uri "${KIPRJMOD}/components/reichelt_usb.pretty")(options "")(descr ""))
+)
