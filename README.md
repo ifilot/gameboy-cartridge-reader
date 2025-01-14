@@ -13,6 +13,8 @@ firmware for the 32u4, and a simple GUI for user interaction.
 > [!NOTE]
 > Download a Windows 64-bit installer for the GUI [via this link](https://github.com/ifilot/gameboy-cartridge-reader/releases/latest/download/gbcr-installer-win64.exe)
 
+<img src="img/gameboy-cartridge-reader-with-cartridge-02.jpg" style="width: 50%;" alt="PCB with components">
+
 ## Features
 
 * **Custom PCB**: Compact and optimized PCB designed for seamless connection with
@@ -61,11 +63,24 @@ crystal and the push button, which are through-hole components. To simplify the
 soldering process, it is recommended that users order a solder paste stencil and
 use a hot plate to solder the SMD components efficiently and accurately.
 
+<img src="img/gameboy-cartridge-reader.jpg" style="width: 50%;" alt="PCB with components">
+
 ![PCB](img/pcb.png)
 
 ### Schematic
 
 ![PCB schematic](pcb/32u4/dmg-gbc-cartridge-reader.svg)
+
+### Writeable cartridge
+
+The writable cartridge for the Game Boy, based on the SST39SF010 flash memory
+chip, offers versatile support for both TTSOP32 and PLCC32 package variants.
+This flexibility allows developers and enthusiasts to choose their preferred
+chip packaging without requiring additional hardware modifications. The
+cartridge is designed to leverage the high-speed erase and write capabilities of
+the SST39SF010, making it ideal for prototyping or homebrew games.
+
+<img src="img/gameboy-writeable-cartridge.jpg" style="width: 50%;" alt="Writeable cartridge">
 
 ## Firmware
 
