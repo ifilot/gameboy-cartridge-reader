@@ -122,29 +122,6 @@ jobs:
         name: ${{env.PROGNAME}}-installer-win64.exe
         path: gui/packaging/${{env.PROGNAME}}-installer-win64.exe
 
-  deploy-dropbox:
-    runs-on: ubuntu-latest
-    needs: [create-installer-windows]
-    permissions: write-all
-    env:
-      TARGET_FOLDER: "/Projects/Software/GBCR/CI/${{ github.ref }}"
-      UPLOADER_FETCH_URL: "https://raw.githubusercontent.com/ifilot/Dropbox-Uploader/master/dropbox_uploader.sh"
-      UPLOADER: "dropbox_uploader.sh"
-      UPLOADER_CONFIG: "dropbox_uploader.cfg"
-    steps:
-    - name: Download artifact
-      uses: actions/download-artifact@v3
-      with:
-        name: ${{env.PROGNAME}}-installer-win64.exe
-        path: ./
-    - name: Upload to dropbox
-      run: |
-          sudo apt update && sudo apt -y install curl
-          curl "${UPLOADER_FETCH_URL}" -o "${UPLOADER}"
-          echo "OAUTH_ACCESS_TOKEN=${{ secrets.DROPBOX_ACCESS_TOKEN }}" > "${UPLOADER_CONFIG}"
-          bash "${UPLOADER}" -f "${UPLOADER_CONFIG}" mkdir "${TARGET_FOLDER}" &>/dev/null || echo "Target folder exists"
-          bash "${UPLOADER}" -f "${UPLOADER_CONFIG}" upload ${{env.PROGNAME}}-installer-win64.exe "${TARGET_FOLDER}"
-
   # Deploy the installer to the releases page
   deploy-installer-windows:
     runs-on: ubuntu-latest
