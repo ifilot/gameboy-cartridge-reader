@@ -27,6 +27,10 @@ firmware for the 32u4, and a simple GUI for user interaction.
   for modification.
 * **Writable Cartridge Support**: Includes a [PCB design](pcb/gb-cart-sst39sf010/) 
   with an SST39SF010 chip, enabling the writing of 32KiB Gameboy games.
+* **Gameboy Camera Support**: Easily extract photos taken with the 
+  [Gameboy Camera](https://en.wikipedia.org/wiki/Game_Boy_Camera)
+  and save them on your computer. The extracted images can be exported in a 
+  variety of color palettes for a personalized look.
 
 > [!IMPORTANT] 
 > Please be aware of copyright laws regarding Gameboy and Gameboy
@@ -81,6 +85,14 @@ cartridge is designed to leverage the high-speed erase and write capabilities of
 the SST39SF010, making it ideal for prototyping or homebrew games.
 
 <img src="img/gameboy-writeable-cartridge.png" style="width: 50%;" alt="Writeable cartridge">
+
+## Gameboy Camera Features
+
+* Extract images directly from the Gameboy Camera cartridge.
+* Customize the color scheme of the extracted photos.
+* Preserve your Gameboy Camera creations in digital form.
+
+<img src="img/gameboy-camera.jpg" style="width: 50%;" alt="Gameboy Camera">
 
 ## Firmware
 
